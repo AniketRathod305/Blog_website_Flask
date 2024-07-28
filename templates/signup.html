@@ -1,0 +1,21 @@
+{% extends "home.html" %} {% block title %}Sign Up{% endblock %} {% block
+    content %}
+    <form action="http://127.0.0.1:5000/signup" method="POST">
+       
+        <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter name" name="name" id="name" required>
+        
+        <label>Email</label>
+        <input type="text" placeholder="Enter email" name="email" id="email" required>
+
+        <label>Password</label>
+        <input type="text" placeholder="Enter password" name="pwd" id="pwd" required>
+
+        <label>Confirm password</label>
+        <input type="text" placeholder="Confirm password" name="cpwd" id="cpwd" required>
+        <button type="submit">Sign Up</button>
+        </div>
+
+    </form>
+{% endblock %}

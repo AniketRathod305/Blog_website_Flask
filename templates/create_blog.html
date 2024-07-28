@@ -1,0 +1,24 @@
+{% extends "home.html" %} {% block title %}Create blog{% endblock %} {% block
+    content %}
+   <form action="http://127.0.0.1:5000/createblog" method="POST">
+  <label>Title</label>
+  <input type="text" name="title" placeholder="Add title">
+  <label>Category</label>
+  <select name="category" aria-placeholder="Select category">
+    <option value="">Lifestyle</option>
+    <option value="">Sports</option>
+    <option value="">Politics</option>
+    <option value="">Food</option>
+    <option value="">Science</option>
+  </select>
+  <label>Content</label>
+  <textarea name="content" placeholder="Add content"></textarea>
+  <label>Image</label>
+  <input type="file">
+  <button type="submit">Create blog</button>
+</form>
+
+
+
+
+{% endblock %}
